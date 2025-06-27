@@ -1,0 +1,77 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'primary-dark': '#070F2B',
+        'primary-blue': '#011532',
+        'primary-blue-500': '#01204E',
+        'primary-blue-400': '#012d6f',
+        'primary-blue-300': '#0246ab',
+        'primary-blue-200': '#035fe8',
+        'primary-blue-100': '#2b80fc',
+        'primary-light-blue': '#68a4fd',
+        'primary-light-blue-200': '#a4c8fe',
+        'primary-light-blue-100': '#cde1fe',
+        beige: '#FFDC7F',
+        'beige-500': '#E1D7B7',
+        navy: '#211951',
+        'navy-500': '#1B1A55',
+        'navy-400': '#1E2A5E',
+        'navy-blue-dark': '#004080',
+        'navy-blue-500': '#0068a5',
+        'navy-blue-300': '#0091bb',
+        'navy-mint-dark': '#00b9c2',
+        'navy-mint': '#00e0bd',
+        'navy-gray': '#16325B',
+        'navy-violet': '#7C93C3',
+        'navy-violet-500': '#55679C',
+        'sky-blue': '#227B94',
+        'sky-blue-100': '#78B7D0',
+        grey: '#758694',
+        'grey-light': '#F0F3FF',
+        cement: '#405D72',
+        mint: '#15F5BA',
+        dark: '#000000',
+        'dark-100': '#050816',
+        light: '#ffffff',
+        'light-200': '#f3f3f3',
+        'light-100': '#f0f3fa',
+        gray: '#444655',
+        'gray-500': '#444655',
+        'gray-400': '#929caa',
+        'gray-300': '#A8AABC',
+        'gray-200': '#b5bbc5',
+        'gray-100': '#d7dae0',
+
+        'rw-primary': '#F74669',
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      keyframes: {
+        ring: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '10%': { transform: 'rotate(15deg)' },
+          '20%': { transform: 'rotate(-10deg)' },
+          '30%': { transform: 'rotate(5deg)' },
+          '40%': { transform: 'rotate(-5deg)' },
+          '50%': { transform: 'rotate(2deg)' },
+          '60%': { transform: 'rotate(-2deg)' },
+        },
+      },
+      animation: {
+        ring: 'ring 0.5s ease-in-out',
+      },
+    },
+  },
+  plugins: [],
+};
+export default config;
