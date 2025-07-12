@@ -33,20 +33,16 @@ export type PROJECT_ID_MAPPING = {
   [K in CATEGORYENUM]: string[];
 };
 
-export type Tags = {
-  name: string;
-  color: string;
-};
-
 export type Project = {
   id: string;
   name: string;
   description: string;
   category: CATEGORYENUM[];
   image: string;
-  tags: Tags[];
+  tags: string[];
   start_date?: string;
   end_date?: string;
   source_code_link?: string;
   live_url?: string;
+  position: number;
 };

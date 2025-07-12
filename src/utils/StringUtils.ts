@@ -1,6 +1,9 @@
-export const getRandomColor = (text: string) => {
+type ColortType = 'bg' | 'text';
+
+export const getRandomColor = (text: string, type: ColortType = 'text') => {
   let hash = 0;
-  for (let i = 0; i < text.length; i++) {
+  const iterationLength = type === 'bg' ? text.length : text.length - 1; // Adjust based on type
+  for (let i = 0; i < iterationLength; i++) {
     hash = text.charCodeAt(i) + ((hash << 5) - hash);
   }
   let color = '#';
