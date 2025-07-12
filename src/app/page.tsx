@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 function Home() {
   const [showAlert, setShowAlert] = useState<boolean>(true);
-  const [selectedCategory, setSelectedCategory] = useState<CATEGORYENUM>(CATEGORYENUM.PORTFOLIO);
+  const [selectedCategory, setSelectedCategory] = useState<CATEGORYENUM>(CATEGORYENUM.WED_DEVELOPMENT);
 
   return (
     <div className="flex flex-col md:flex-row md:overflow-hidden">

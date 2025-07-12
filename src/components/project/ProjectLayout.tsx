@@ -1,3 +1,5 @@
+'use client';
+
 import { Project } from '@/types'
 import React from 'react'
 import HeaderCard from './HeaderCard';
