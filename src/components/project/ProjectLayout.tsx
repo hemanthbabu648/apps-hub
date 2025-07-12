@@ -1,7 +1,6 @@
 import { Project } from '@/types'
 import React from 'react'
 import HeaderCard from './HeaderCard';
-import Preview from './Preview';
 import LicenseAndSharable from './LicenseAndSharable';
 
 type ProjectLayoutProps = {
@@ -17,12 +16,9 @@ const ProjectLayout: React.FC<ProjectLayoutProps> = ({ project, children }) => {
         description={project.description}
         cateogory={project.category}
       />
-      {project.live_url && (
-        <Preview url={project.live_url} />
-      )}
-      <div>
+      <>
         {children}
-      </div>
+      </>
       <LicenseAndSharable
         projectName={project.name}
         projectSourceCode={project.source_code_link}
