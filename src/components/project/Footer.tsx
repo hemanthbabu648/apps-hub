@@ -8,11 +8,11 @@ import { FaLinkedin, FaTelegramPlane, FaTwitter } from "react-icons/fa";
 import z from "zod";
 import emailjs from '@emailjs/browser';
 
-const NewsLetterSchema = z.object({
+export const NewsLetterSchema = z.object({
   email: z.string().trim().email({ message: 'Invalid email address' }),
 });
 
-type NewsLetterFormSchema = z.infer<typeof NewsLetterSchema>;
+export type NewsLetterFormSchema = z.infer<typeof NewsLetterSchema>;
 
 function Footer() {
   const [loading, setLoading] = useState<boolean>(false);
