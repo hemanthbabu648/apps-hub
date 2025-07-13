@@ -69,8 +69,7 @@ function ProjectPage() {
         </section>
 
         <section >
-          <h2 className="text-xl font-semibold mb-2 text-primary-blue-300">🔍 Pages & Features</h2>
-          <p className='mb-1 text-base'>Here’s what the portfolio currently includes:</p>
+          <h2 className="text-xl font-semibold mb-2 text-primary-blue-300">🔍 Features</h2>
           <ul className="list-disc pl-6 text-gray-700">
             {features.map((feature, idx) => (
               <li key={idx} className="marker:text-primary-blue-300">{feature}</li>
