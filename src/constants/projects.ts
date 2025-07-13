@@ -49,8 +49,9 @@ export const allProjects: Project[] = [
   },
   {
     id: uuids[4],
-    name: 'Apps Showcase',
-    description: 'A cross-platform mobile app for tracking workouts and nutrition.',
+    name: 'Apps Hub',
+    description:
+      'A centralized showcase of my applications — with clean design, categorized layout, and instant access to live demos and source code.',
     category: [CATEGORYENUM.WED_DEVELOPMENT],
     tags: [
       'React',
@@ -61,8 +62,8 @@ export const allProjects: Project[] = [
       'zod',
       'emailjs/browser',
     ],
-    image: '/projects/apps-showcase.png',
-    source_code_link: 'https://github.com/hemanthbabu648/apps.hemanthbabu648',
+    image: '/projects/apps-hub.png',
+    source_code_link: 'https://github.com/hemanthbabu648/apps-hub',
     live_url: 'https://apps.hemanthbabu648.com',
     position: 4,
   },
