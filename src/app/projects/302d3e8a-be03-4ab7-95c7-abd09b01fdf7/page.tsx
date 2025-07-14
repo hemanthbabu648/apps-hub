@@ -47,7 +47,7 @@ function ProjectPage() {
     <ProjectLayout project={project}>
       <div className='flex flex-col gap-4'>
         <p className='text-base font-normal text-primary-blue-500'>
-          Managing your personal finances is hard — but building a system to manage it? That’s a whole other challenge. I recently created a full-stack Personal Finance Tracker that helps users monitor their income, expenses, and overall financial health — all in one clean dashboard.
+          Managing your personal finances is hard — but building a system to manage it? That&apos;s a whole other challenge. I recently created a full-stack Personal Finance Tracker that helps users monitor their income, expenses, and overall financial health — all in one clean dashboard.
         </p>
         <p className='text-base font-normal text-primary-blue-500'>
           This project was more than a CRUD app — it pushed me to integrate modern tools like Supabase, Express, and React, while delivering a responsive and intuitive user interface.
@@ -76,7 +76,7 @@ function ProjectPage() {
 
         <section className="mb-8">
           <h2 className="text-xl font-semibold mb-2 text-primary-blue-300">📈 Future Plans</h2>
-          <p className='mb-1 text-base'>Here’s what I&apos;m planning next:</p>
+          <p className='mb-1 text-base'>Here&apos;s what I&apos;m planning next:</p>
           <ul className="list-disc pl-6 text-gray-700">
             {featurePlans.map((item, idx) => (
               <li key={idx} className="marker:text-primary-blue-300">{item}</li>
