@@ -1,0 +1,21 @@
+{
+  "name": "Hemanth Babu S | Apps Hub",
+  "short_name": "Hemanth Babu S | Apps Hub",
+  "description": "A centralized showcase of my applications — with clean design, categorized layout, and instant access to live demos and source code.",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+}
