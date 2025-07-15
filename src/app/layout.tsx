@@ -11,8 +11,8 @@ const lusitana = Lusitana({ subsets: ['latin'], weight: ['400', '700'] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Hemanth Babu S | Apps Hub",
-    template: "%s | Hemanth Babu S | Apps Hub",
+    default: "Apps Hub | Hemanth Babu S",
+    template: "%s | Apps Hub | Hemanth Babu S",
   },
   description: "A centralized showcase of my applications — with clean design, categorized layout, and instant access to live demos and source code.",
   keywords: ["web development", "Next.js", "React", "JavaScript", "TypeScript", "portfolio", "apps hub", "Hemanth Babu S"],
@@ -26,10 +26,10 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://www.apps.hemanthbabu648.com/"),
   openGraph: {
-    title: "Hemanth Babu S | Apps Hub",
+    title: "Apps Hub | Hemanth Babu S",
     description: "A centralized showcase of my applications — with clean design, categorized layout, and instant access to live demos and source code.",
     url: "/",
-    siteName: "Hemanth Babu S | Apps Hub",
+    siteName: "Apps Hub | Hemanth Babu S",
     locale: "en_US",
     type: "website",
     images: [
@@ -37,13 +37,13 @@ export const metadata: Metadata = {
         url: "/logo.svg",
         width: 1200,
         height: 630,
-        alt: "Hemanth Babu S | Apps Hub",
+        alt: "Apps Hub | Hemanth Babu S",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hemanth Babu S | Apps Hub",
+    title: "Apps Hub | Hemanth Babu S",
     description: "A centralized showcase of my applications — with clean design, categorized layout, and instant access to live demos and source code.",
     images: ["/logo.svg"],
     creator: "@hemanthbabu648",
