@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const slicedProjectEntries = allProjectEntries.slice(0, 4);
 
   // Create sitemap entries for projects
-  const projectSitemapEntries = slicedProjectEntries.map(([uuid]) => ({
+  const projectSitemapEntries = slicedProjectEntries.map(([_, uuid]) => ({
     url: `${baseUrl}/projects/${uuid}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,

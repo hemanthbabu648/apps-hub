@@ -2,7 +2,18 @@
 
 const nextConfig = {
   images: {
-    domains: ['hemanthbabu648.com', 'www.hemanthbabu648.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'hemanthbabu648.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.hemanthbabu648.com',
+        pathname: '/**',
+      },
+    ],
   },
 };
 
