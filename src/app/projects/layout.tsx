@@ -5,6 +5,7 @@ import Footer from "@/components/project/Footer";
 import { Button } from "@mantine/core";
 import Link from "next/link";
 import { useState } from "react";
+import { FaArrowLeft } from "react-icons/fa";
 
 export default function ProjectsLayout({
   children,
@@ -41,7 +42,14 @@ export default function ProjectsLayout({
           </AlertCard>
         </div>
       )}
-      <div className="max-w-7xl mx-auto p-8">
+      <div className="max-w-7xl mx-auto p-8 pt-0">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 mb-4 transition-colors"
+        >
+          <FaArrowLeft />
+          Back to Home
+        </Link>
         {children}
       </div>
       <Footer />
