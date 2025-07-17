@@ -21,7 +21,7 @@ const handler = async () => {
       }));
     return NextResponse.json({
       data: {
-        posts: latestProjects,
+        projects: latestProjects,
         total: allProjects.length,
         count: latestProjects.length,
       },
